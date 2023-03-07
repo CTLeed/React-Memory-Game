@@ -1,0 +1,63 @@
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #1d1d1d;
+  height: 100vh;
+  align-items: center;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  overflow-x: hidden !important;
+  font-weight: 400;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.board {
+  padding: 1rem;
+  background-color: #1d1d1d;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  height: 334px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  height: 332px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #393838;
+  box-shadow: 5px 2px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* .flipped img {
+  padding: 2px;
+} */
+
+.flipped .spin {
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
