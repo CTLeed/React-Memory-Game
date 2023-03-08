@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
+import { Modal } from "./Modal";
 import { shuffle } from "./utils";
 import Batman from "../imgs/Batman.avif";
 import Aquaman from "../imgs/Aquaman.avif";
@@ -10,7 +11,7 @@ import MartianManhunter from "../imgs/MartianManhunter.avif";
 import Superman from "../imgs/Superman.avif";
 import WonderWoman from "../imgs/WonderWoman.avif";
 import Back from "../imgs/JL.avif";
-// import Joker from "../imgs/Joker.avif"
+
 
 const images = [
     Batman,
@@ -88,7 +89,7 @@ const Board = () => {
             setFlippedCards([]);
         }
         if (matchedCards.length === 16) {
-            window.location.reload();
+            <Modal />
         }
     }, [flippedCards]);
 
